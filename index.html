@@ -30,7 +30,25 @@
   <!--
     - #MAIN
   -->
-
+    <!-- START PRELOADER AREA-->
+    <div class="preloader">
+        <svg viewbox="0 0 1000 1000" preserveaspectratio="none">
+            <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+        <div class="preloader-heading">
+            <div class="load-text">
+                <span>W</span>
+                <span>e</span>
+                <span>l</span>
+                <span>c</span>
+                <span>o</span>
+                <span>m</span>
+                <span>e</span>
+            </div>
+        </div>
+    </div>
+    <!-- END PRELOADER AREA -->
+  
   <main>
 
     <!--
@@ -221,7 +239,7 @@
 
         <section class="about-text">
           <p>
-            I'm an aspiring UI/UX Designer and Web Developer based in India, with a background in Electronics and Communication Engineering. I specialize in crafting user-friendly, visually engaging digital experiences that solve real-world problems with clean design and smart functionality.
+            I'm an aspiring UI/UX Designer and Web Developer, with a background in Electronics and Communication Engineering. I specialize in crafting user-friendly, visually engaging digital experiences that solve real-world problems with clean design and smart functionality.
           </p>
 
           <p>
@@ -861,7 +879,68 @@
 
       </article>
 
+      <!--
+        - #PROJECTS
+      -->
+<article class="projects" data-page="projects">
 
+  <header>
+    <h2 class="h2 article-title">Projects</h2>
+  </header>
+
+  <section class="projects">
+
+    <ul class="filter-list">
+      <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+      <li class="filter-item"><button data-filter-btn>AI</button></li>
+      <li class="filter-item"><button data-filter-btn>Web Development</button></li>
+    </ul>
+
+    <div class="filter-select-box">
+      <button class="filter-select" data-select>
+        <div class="select-value" data-selecct-value>Select category</div>
+        <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+      </button>
+
+      <ul class="select-list">
+        <li class="select-item"><button data-select-item>All</button></li>
+        <li class="select-item"><button data-select-item>AI</button></li>
+        <li class="select-item"><button data-select-item>Web Development</button></li>
+      </ul>
+    </div>
+
+    <ul class="project-list">
+
+  <!-- AI Chatbot -->
+      <li class="project-item active" data-filter-item data-category="AI">
+        <figure class="project-img">
+          <a href="https://asvms2004.github.io/Chatbot-AI/" target="_blank">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/chatbot.jpg" alt="AI Chatbot" loading="lazy">
+          </a>
+        </figure>
+        <h3 class="project-title">AI Powered Chat Bot</h3>
+        <p class="project-category">AI</p>
+        <a href="https://github.com/asvms2004/Chatbot-AI" class="project-link" target="_blank">View Source Code</a>
+      </li>
+
+      <!-- E-Commerce Website -->
+      <li class="project-item active" data-filter-item data-category="Web Development">
+        <figure class="project-img">
+          <a href="https://asvms2004.github.io/e-commerce-website/" target="_blank">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/ecommerce.jpg" alt="E-Commerce Website" loading="lazy">
+          </a>
+        </figure>
+        <h3 class="project-title">E-Commerce Website</h3>
+        <p class="project-category">Web Development</p>
+        <a href="https://github.com/asvms2004/e-commerce-website" class="project-link" target="_blank">View Source Code</a>
+      </li>
+
+    </ul>
+
+  </section>
+</article>
 
       <!--
         - #CONTACT
