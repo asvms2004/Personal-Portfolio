@@ -104,3 +104,18 @@ modalContainer.addEventListener("click", function (event) {
     modalContainer.classList.remove("active");
   }
 });
+
+window.addEventListener("load", () => {
+  const preloader = document.querySelector(".preloader");
+
+  // Total animation time: text fades (~1.3s) + SVG slides (2s) + small buffer
+  const totalTime = 3000; // 3 seconds total duration
+
+  setTimeout(() => {
+    preloader.style.opacity = "0";
+    preloader.style.transition = "opacity 1s ease";
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 1000); // match fade out duration
+  }, totalTime);
+});
